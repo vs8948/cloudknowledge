@@ -13,7 +13,7 @@ RUN yum install -y httpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page276/jon.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip jon.zip
-RUN cp -rvf photogenic/* .
+RUN cp -rvf jon/* .
 RUN rm -rf photogenic photogenic.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
