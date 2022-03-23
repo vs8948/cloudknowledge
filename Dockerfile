@@ -12,8 +12,8 @@ RUN yum install -y httpd \
  unzip 
 ADD https://www.phptpoint.com/getprojectfile/46 /var/www/html/
 WORKDIR /var/www/html
-RUN unzip ERP System Project in PHP Free Download-1629435806.zip
-RUN cp -rvf ERP System Project in PHP Free Download-1629435806/* .
+RUN unzip *1629435806.zip
+RUN cp -rvf 1629435806/* .
 RUN rm -rf photogenic photogenic.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80  
