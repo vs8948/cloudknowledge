@@ -10,10 +10,10 @@ CMD /bin/bash
 RUN yum install -y httpd \
   zip \
  unzip 
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page276/jon.zip /var/www/html/
+ADD https://www.phptpoint.com/getprojectfile/46 /var/www/html/
 WORKDIR /var/www/html
-RUN unzip jon.zip
-RUN cp -rvf jon/* .
+RUN unzip ERP System Project in PHP Free Download-1629435806.zip
+RUN cp -rvf ERP System Project in PHP Free Download-1629435806/* .
 RUN rm -rf photogenic photogenic.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80  
