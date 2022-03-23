@@ -13,7 +13,7 @@ RUN yum install -y httpd \
 ADD https://files.all-free-download.com/downloadfiles/graphic/graphic_7/clickable_6891266.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip clickable_6891266.zip
-RUN cp -rvf clickable_6891266/* .
+RUN cp -rvf clickable/* .
 RUN rm -rf clickable_6891266 clickable_6891266.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80  
