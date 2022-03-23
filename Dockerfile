@@ -16,4 +16,4 @@ RUN unzip clickable_6891266.zip
 RUN cp -rvf 2014_clickable/* .
 RUN rm -rf clickable_6891266 clickable_6891266.zip
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
-EXPOSE 80  
+EXPOSE 80   
