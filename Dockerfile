@@ -10,10 +10,10 @@ CMD /bin/bash
 RUN yum install -y httpd \
   zip \
  unzip 
-ADD https://www.phptpoint.com/getprojectfile/46 /var/www/html/
+RUN rm -rf */.zip
+ADD https://files.all-free-download.com/downloadfiles/graphic/graphic_7/blue_flame_6891264.zip /var/www/html/
 WORKDIR /var/www/html
-RUN unzip 1629435806.zip
-RUN cp -rvf 1629435806/* .
-RUN rm -rf photogenic photogenic.zip 
+RUN unzip blue_flame_6891264.zip
+RUN cp -rvf blue_flame_6891264/* .
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80  
